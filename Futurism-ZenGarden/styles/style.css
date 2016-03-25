@@ -1,7 +1,32 @@
+@import url(_normalize.css);
+body {
+  background-color: #b5ba72; }
+  body p {
+    color: #322826; }
+
 p {
   font-family: "signo"; }
 
 h3 {
   font-family: "industry"; }
+
+.intro {
+  width: 100%;
+  background-color: #d64139;
+  border-top: 20px solid; }
+
+h1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 5em;
+  text-align: right; }
+
+h2 {
+  font-family: "industry"; }
+
+.banner {
+  width: 70%;
+  margin: 0 auto;
+  background-color: lightblue; }
 
 /*# sourceMappingURL=style.css.map */
