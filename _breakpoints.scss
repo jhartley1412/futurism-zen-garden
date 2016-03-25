@@ -1,0 +1,44 @@
+
+// breakpoints - 400px, 600px (maybe 900px)
+
+
+@media(min-width: 400px){
+
+	header[role="banner"]{
+		font-size: 1em;
+	}
+
+	.summary{
+		margin: 0 auto;
+	}
+}
+
+
+@media(min-width: 600px){
+	header[role="banner"]{
+		width: 50%;
+		font-size: 2.5em;
+	}
+
+	.summary{
+		margin: 0 auto;
+		margin-top: 1em;
+	}
+}
+
+@media(min-width: 900px){
+
+	.intro{
+		width: 100%;
+		position: relative;
+	}
+	header[role="banner"]{
+		width: 100%;
+		font-size: 4em;
+	}
+
+	.summary{
+		margin: 0 auto;
+		margin-top: 2em;
+	}
+}

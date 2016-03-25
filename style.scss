@@ -1,0 +1,40 @@
+
+@import 'normalize';
+
+@import 'breakpoints';
+
+body{
+	background-color: #B5BA72;
+}
+
+
+header[role="banner"]{
+	width: 100%;
+	padding-left: 2em;
+	margin-top: -2em;
+	top: 30px;
+	//background-color: lightblue;
+	transform: rotate(-10deg);
+	font-family: "tablet-gothic-compressed";
+	position: relative;
+
+	h1{
+		margin-top: 1em;
+		margin-bottom: 10px;
+	}
+
+	h2{
+		margin-top: 0;
+	}
+}
+
+.summary{
+	width: 100%;
+	max-width: 900px;
+	box-sizing: border-box;
+	padding: 2em;
+	font-family: "industry";
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
