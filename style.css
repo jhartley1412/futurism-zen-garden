@@ -387,16 +387,18 @@ textarea {
     margin: 0 auto;
     margin-top: 2em; } }
 body {
-  background-color: #B5BA72; }
+  background-color: #f6f2ee; }
 
 header[role="banner"] {
   width: 100%;
   padding-left: 2em;
   margin-top: -2em;
   top: 30px;
+  background-color: #322826;
   transform: rotate(-10deg);
   font-family: "tablet-gothic-compressed";
-  position: relative; }
+  position: relative;
+  color: #5f747e; }
   header[role="banner"] h1 {
     margin-top: 1em;
     margin-bottom: 10px; }
@@ -410,6 +412,12 @@ header[role="banner"] {
   padding: 2em;
   font-family: "industry";
   font-weight: 700;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  background-color: #241c1b;
+  color: white; }
+  .summary a {
+    color: #5f747e;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
