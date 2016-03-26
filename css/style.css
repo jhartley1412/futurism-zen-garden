@@ -434,8 +434,13 @@ header[role="banner"] {
   .summary {
     margin-top: 2em; }
 
-  .main {
-    color: #322826; } }
+  .explanation, .participation, .benefits, .requirements {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    margin-top: 0.5em;
+    color: #322826;
+    background-color: #f6f2ee; } }
 @media (min-width: 400px) {
   .intro {
     padding: 0;
@@ -449,6 +454,9 @@ header[role="banner"] {
     margin-top: 3em;
     font-size: 1em; } }
 @media (min-width: 600px) {
+  h3 {
+    font-size: 2em; }
+
   p {
     font-weight: 700; }
 
@@ -468,7 +476,13 @@ header[role="banner"] {
     font-size: 1.2em; }
 
   .explanation, .participation, .benefits, .requirements {
-    font-weight: 700; } }
+    width: 40%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 2em;
+    margin: 0.5em auto;
+    color: #322826;
+    background-color: #f6f2ee; } }
 @media (min-width: 900px) {
   h3 {
     font-size: 2.2em; }
@@ -490,25 +504,15 @@ header[role="banner"] {
   .preamble {
     margin-top: -2em;
     font-size: 1.4em;
-    position: relative; }
-
-  .explanation, .participation, .benefits, .requirements, .participation {
-    width: 45%;
-    margin: 0.5em 2.5% 0 2.5%;
-    float: left; }
-
-  .benefits, .requirements {
-    width: 45%;
-    margin: 0.5em 2.5% 0 2.5%;
-    float: left; } }
+    position: relative; } }
 body {
   background-color: #f6f2ee;
   width: 100%; }
 
 .main {
   box-sizing: border-box;
-  padding: 1em;
-  background-color: #50323e; }
+  background-color: #322826;
+  padding-top: 1em; }
 
 h3 {
   font-family: "tablet-gothic-compressed";
@@ -527,9 +531,11 @@ a {
     text-decoration: line-through; }
 
 .explanation, .participation, .benefits, .requirements {
+  width: 100%;
   box-sizing: border-box;
   padding: 2em;
-  margin: 0.5em auto;
+  margin-top: 0.5em;
+  color: #322826;
   background-color: #f6f2ee; }
 
 /*# sourceMappingURL=style.css.map */

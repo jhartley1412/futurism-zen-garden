@@ -30,12 +30,16 @@
 		margin-top: 2em;
 	}
 
-	.main{
+	.explanation, .participation, .benefits, .requirements{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 2em;
+		margin-top: 0.5em;
 		color: $dark_accent;
+		background-color: $light_accent;
 	}
 
-	.explanation{
-	}
+
 }
 
 
@@ -62,6 +66,10 @@
 
 @media(min-width: 600px){
 
+	h3{
+		font-size: 2em;
+	}
+
 	p{
 		font-weight: 700;
 	}
@@ -86,8 +94,15 @@
 		font-size: 1.2em;
 	}
 
-	.explanation{
-		font-weight: 700;
+
+	.explanation, .participation, .benefits, .requirements{
+		width: 40%;
+		max-width: 600px;
+		box-sizing: border-box;
+		padding: 2em;
+		margin: 0.5em auto;
+		color: $dark_accent;
+		background-color: $light_accent;
 	}
 }
 
@@ -124,17 +139,6 @@
 		position: relative;
 	}
 
-	.explanation, .participation{
-		width: 45%;
-		margin: 0.5em 2.5% 0 2.5%;
-		float: left;
-	}
-
-	.benefits, .requirements{
-		width: 45%;
-		margin: 0.5em 2.5% 0 2.5%;
-		float: left;
-	}
 
 
 

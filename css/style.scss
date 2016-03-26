@@ -15,8 +15,8 @@ body{
 
 .main{
 	box-sizing: border-box;
-	padding: 1em;
-	background-color: $primary_color;
+	background-color: $dark_accent;
+	padding-top: 1em;
 }
 
 h3{
@@ -40,15 +40,13 @@ a{
 	}
 }
 
-.explanation{
+.explanation, .participation, .benefits, .requirements{
+	width: 100%;
 	box-sizing: border-box;
 	padding: 2em;
-	margin: 0.5em auto;
+	margin-top: 0.5em;
+	color: $dark_accent;
 	background-color: $light_accent;
-}
-
-.participation, .benefits, .requirements{
-	@extend .explanation;
 }
 
 
