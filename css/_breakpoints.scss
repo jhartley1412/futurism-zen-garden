@@ -4,6 +4,14 @@
 
 @media(min-width: 0){
 
+	p{
+		font-weight: 400;
+	}
+
+	h3{
+		font-size: 2em;
+	}
+
 	.intro{
 		overflow: hidden;
 
@@ -20,6 +28,13 @@
 
 	.summary{
 		margin-top: 2em;
+	}
+
+	.main{
+		color: $dark_accent;
+	}
+
+	.explanation{
 	}
 }
 
@@ -41,18 +56,16 @@
 		font-size: 1em;
 	}
 
-	.preamble{
-
-		h3{
-			font-size: 2em;
-		}
-	}
-
 }
 
 
 
 @media(min-width: 600px){
+
+	p{
+		font-weight: 700;
+	}
+
 
 	.intro{
 		padding: 2em;
@@ -65,12 +78,16 @@
 	}
 
 	.summary{
-		margin: 3em auto 0 auto;
+		margin: 2em auto 0 auto;
 		font-size: 1.2em;
 	}
 
 	.preamble{
 		font-size: 1.2em;
+	}
+
+	.explanation{
+		font-weight: 700;
 	}
 }
 
@@ -80,6 +97,10 @@
 
 @media(min-width: 900px){
 
+	h3{
+		font-size: 2.2em;
+	}
+
 	.intro{
 		width: 100%;
 		padding: 2em;
@@ -87,12 +108,13 @@
 	}
 
 	header[role="banner"]{
+		margin-top: -2em;
 		width: 100%;
-		font-size: 4em;
+		font-size: 3em;
 	}
 
 	.summary{
-		margin: 3em auto 0 auto;
+		margin: 2em auto 0 auto;
 		font-size: 1.4em;
 	}
 
@@ -101,4 +123,21 @@
 		font-size: 1.4em;
 		position: relative;
 	}
+
+	.explanation, .participation{
+		width: 45%;
+		margin: 0.5em 2.5% 0 2.5%;
+		float: left;
+	}
+
+	.benefits, .requirements{
+		width: 45%;
+		margin: 0.5em 2.5% 0 2.5%;
+		float: left;
+	}
+
+
+
+
+
 }

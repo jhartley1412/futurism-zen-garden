@@ -363,6 +363,8 @@ textarea {
 .intro {
   background-image: url("../_images/brown_swatches.svg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-bottom: 1em; }
 
 header[role="banner"] {
@@ -414,6 +416,12 @@ header[role="banner"] {
     transform: rotate(1deg); }
 
 @media (min-width: 0) {
+  p {
+    font-weight: 400; }
+
+  h3 {
+    font-size: 2em; }
+
   .intro {
     overflow: hidden; }
 
@@ -424,7 +432,10 @@ header[role="banner"] {
       margin-top: -1em; }
 
   .summary {
-    margin-top: 2em; } }
+    margin-top: 2em; }
+
+  .main {
+    color: #322826; } }
 @media (min-width: 400px) {
   .intro {
     padding: 0;
@@ -436,11 +447,11 @@ header[role="banner"] {
 
   .summary {
     margin-top: 3em;
-    font-size: 1em; }
-
-  .preamble h3 {
-    font-size: 2em; } }
+    font-size: 1em; } }
 @media (min-width: 600px) {
+  p {
+    font-weight: 700; }
+
   .intro {
     padding: 2em;
     box-sizing: border-box; }
@@ -450,29 +461,46 @@ header[role="banner"] {
     width: 100%; }
 
   .summary {
-    margin: 3em auto 0 auto;
+    margin: 2em auto 0 auto;
     font-size: 1.2em; }
 
   .preamble {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .explanation, .participation, .benefits, .requirements {
+    font-weight: 700; } }
 @media (min-width: 900px) {
+  h3 {
+    font-size: 2.2em; }
+
   .intro {
     width: 100%;
     padding: 2em;
     box-sizing: border-box; }
 
   header[role="banner"] {
+    margin-top: -2em;
     width: 100%;
-    font-size: 4em; }
+    font-size: 3em; }
 
   .summary {
-    margin: 3em auto 0 auto;
+    margin: 2em auto 0 auto;
     font-size: 1.4em; }
 
   .preamble {
     margin-top: -2em;
     font-size: 1.4em;
-    position: relative; } }
+    position: relative; }
+
+  .explanation, .participation, .benefits, .requirements, .participation {
+    width: 45%;
+    margin: 0.5em 2.5% 0 2.5%;
+    float: left; }
+
+  .benefits, .requirements {
+    width: 45%;
+    margin: 0.5em 2.5% 0 2.5%;
+    float: left; } }
 body {
   background-color: #f6f2ee;
   width: 100%; }
@@ -480,49 +508,28 @@ body {
 .main {
   box-sizing: border-box;
   padding: 1em;
-  background-color: #5f747e; }
+  background-color: #50323e; }
 
 h3 {
   font-family: "tablet-gothic-compressed";
   margin: 0 auto; }
 
 p {
-  line-height: 1.8; }
+  line-height: 1.8;
+  font-family: "industry"; }
 
 a {
   color: #5f747e;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700; }
   a:hover {
     text-decoration: line-through; }
 
-.explanation {
+.explanation, .participation, .benefits, .requirements {
   box-sizing: border-box;
-  padding: 0.5em;
-  margin: 0 2.5%; }
-
-.participation {
-  width: 45%;
-  background-color: blue;
-  box-sizing: border-box;
-  padding: 0.5em;
-  margin: 0 2.5%;
-  float: left; }
-
-.benefits {
-  width: 45%;
-  background-color: blue;
-  box-sizing: border-box;
-  padding: 0.5em;
-  margin: 0 2.5%;
-  float: left; }
-
-.requirements {
-  width: 45%;
-  background-color: blue;
-  box-sizing: border-box;
-  padding: 0.5em;
-  margin: 0 2.5%;
-  float: left; }
+  padding: 2em;
+  margin: 0.5em auto;
+  background-color: #f6f2ee; }
 
 /*# sourceMappingURL=style.css.map */

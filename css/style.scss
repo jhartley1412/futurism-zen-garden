@@ -16,7 +16,7 @@ body{
 .main{
 	box-sizing: border-box;
 	padding: 1em;
-	background-color: $secondary_color;
+	background-color: $primary_color;
 }
 
 h3{
@@ -26,12 +26,14 @@ h3{
 
 p{
 	line-height: 1.8;
+	font-family: "industry";
 }
 
 a{
 	color: $secondary_color;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-weight: 700;
 
 	&:hover{
 		text-decoration: line-through;
@@ -40,35 +42,13 @@ a{
 
 .explanation{
 	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
+	padding: 2em;
+	margin: 0.5em auto;
+	background-color: $light_accent;
 }
 
-.participation{
-	width: 45%;
-	background-color: blue;
-	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
-	float: left;
-}
-
-.benefits{
-	width: 45%;
-	background-color: blue;
-	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
-	float: left;
-}
-
-.requirements{
-	width: 45%;
-	background-color: blue;
-	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
-	float: left;
+.participation, .benefits, .requirements{
+	@extend .explanation;
 }
 
 
