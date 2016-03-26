@@ -9,43 +9,54 @@
 
 
 body{
-	background-color: $dark_accent;
+	background-color: $light_accent;
+	width: 100%;
 }
 
-.explanation{
-	width: 45%;
-	background-color: red;
-	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
-	float: left;
+a{
+	color: $secondary_color;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover{
+		text-decoration: line-through;
+	}
 }
 
-.participation{
-	width: 45%;
-	background-color: blue;
-	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
-	float: left;
-}
+// .explanation{
+// 	width: 45%;
+// 	background-color: red;
+// 	box-sizing: border-box;
+// 	padding: 0.5em;
+// 	margin: 0 2.5%;
+// 	float: left;
+// }
 
-.benefits{
-	width: 45%;
-	background-color: blue;
-	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
-	float: left;
-}
+// .participation{
+// 	width: 45%;
+// 	background-color: blue;
+// 	box-sizing: border-box;
+// 	padding: 0.5em;
+// 	margin: 0 2.5%;
+// 	float: left;
+// }
 
-.requirements{
-	width: 45%;
-	background-color: blue;
-	box-sizing: border-box;
-	padding: 0.5em;
-	margin: 0 2.5%;
-	float: left;
-}
+// .benefits{
+// 	width: 45%;
+// 	background-color: blue;
+// 	box-sizing: border-box;
+// 	padding: 0.5em;
+// 	margin: 0 2.5%;
+// 	float: left;
+// }
+
+// .requirements{
+// 	width: 45%;
+// 	background-color: blue;
+// 	box-sizing: border-box;
+// 	padding: 0.5em;
+// 	margin: 0 2.5%;
+// 	float: left;
+// }
 
 

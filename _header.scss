@@ -1,21 +1,21 @@
 
 
 .intro{
-	background-color: $light_accent;
+	background-image: url('./_images/brown_swatches.svg');
+	background-size: cover;
 }
 
 
 header[role="banner"]{
-	width: 80%;
-	max-width: 1200px;
+	width: 100%;
 	padding-left: 1em;
 	margin-top: -2em;
 	top: 30px;
-	background-color: $dark_accent;
+	background-color: $primary_color;
 	transform: rotate(-10deg);
 	font-family: "tablet-gothic-compressed";
 	position: relative;
-	color: $secondary_color;
+	color: $light_accent;
 
 	h1{
 		margin-top: 1em;
@@ -35,30 +35,34 @@ header[role="banner"]{
 	padding: 2em;
 	font-family: "industry";
 	font-weight: 700;
-	background-color: darken($dark_accent, 5%);
-	color: white;
+	background-color: darken($primary_color, 10%);
+	color: $light_accent;
 	position: relative;
 	transform: rotate(2deg);
 
 	p{
 		transform: rotate(-2deg);
 	}
+}
 
-	a{
-		color: $secondary_color;
-		text-decoration: none;
-		text-transform: uppercase;
+.preamble{
+	float: left;
+	max-width: 700px;
+	box-sizing: border-box;
+	padding: 2em;
+	font-family: "industry";
+	font-weight: 700;
+	background-color: $primary_color;
+	color: $light_accent;
+	position: relative;
+	transform: rotate(-1deg);
 
-		&:hover{
-			text-decoration: line-through;
-		}
+	p{
+		transform: rotate(1deg);
 	}
 }
 
 
-.preamble{
-	background-color: lightblue;
-	width: 100%;
-	max-width: 760px;
-	float: left;
-}
+
+
+
