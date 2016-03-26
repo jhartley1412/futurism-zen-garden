@@ -1,0 +1,103 @@
+
+// breakpoints - 400px, 600px (maybe 900px)
+
+
+@media(min-width: 400px){
+
+	.intro{
+		padding: 0;
+		overflow: hidden;
+	}
+
+	header[role="banner"]{
+		z-index: 2;
+		font-size: 1em;
+	}
+
+	.summary{
+		z-index: 1;
+		margin-top: 3em;
+		font-size: 1em;
+	}
+
+	.preamble{
+		z-index: 2;
+		margin-top: -2em;
+	}
+
+	.explanation, .participation, .benefits, .requirements{
+		background-color: $light_accent;
+	}
+
+	.explanation{
+		width: 100%;
+
+		h3{
+			font-size: 2em;
+		}
+
+	}
+}
+
+
+
+
+
+
+@media(min-width: 600px){
+
+	.intro{
+		padding: 2em;
+		box-sizing: border-box;
+	}
+
+	header[role="banner"]{
+		z-index: 1;
+		font-size: 2.5em;
+		width: 100%;
+	}
+
+	.summary{
+		z-index: 2;
+		margin: 5em auto;
+		font-size: 1.2em;
+	}
+
+	.preamble{
+		z-index: 3;
+		margin-top: -8em;
+		font-size: 1.2em;
+	}
+}
+
+
+
+
+
+@media(min-width: 900px){
+
+	.intro{
+		width: 100%;
+		padding: 2em;
+		box-sizing: border-box;
+	}
+
+	header[role="banner"]{
+		z-index: 1;
+		width: 100%;
+		font-size: 4em;
+	}
+
+	.summary{
+		z-index: 2;
+		margin: 3em auto;
+		font-size: 1.4em;
+	}
+
+	.preamble{
+		z-index: 3;
+		margin-top: -7em;
+		font-size: 1.4em;
+		position: relative;
+	}
+}
