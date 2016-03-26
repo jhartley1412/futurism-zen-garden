@@ -10,12 +10,12 @@
 	}
 
 	header[role="banner"]{
-		z-index: 2;
+		z-index: 1;
 		font-size: 1em;
 	}
 
 	.summary{
-		z-index: 1;
+		z-index: 2;
 		margin-top: 3em;
 		font-size: 1em;
 	}
@@ -23,6 +23,15 @@
 	.preamble{
 		z-index: 3;
 		margin-top: -2em;
+	}
+
+	.explanation{
+		width: 100%;
+		
+		h3{
+			font-size: 10em;
+		}
+		background-color: green;
 	}
 }
 
@@ -53,6 +62,7 @@
 	.preamble{
 		z-index: 3;
 		margin-top: -8em;
+		font-size: 1.2em;
 	}
 }
 
@@ -83,6 +93,7 @@
 	.preamble{
 		z-index: 3;
 		margin-top: -7em;
+		font-size: 1.4em;
 		position: relative;
 	}
 }

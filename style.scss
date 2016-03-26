@@ -13,6 +13,15 @@ body{
 	width: 100%;
 }
 
+h3{
+	font-family: "tablet-gothic-compressed";
+	margin: 0 auto;
+}
+
+p{
+	line-height: 1.8;
+}
+
 a{
 	color: $secondary_color;
 	text-decoration: none;
@@ -23,40 +32,37 @@ a{
 	}
 }
 
-// .explanation{
-// 	width: 45%;
-// 	background-color: red;
-// 	box-sizing: border-box;
-// 	padding: 0.5em;
-// 	margin: 0 2.5%;
-// 	float: left;
-// }
+.explanation{
+	box-sizing: border-box;
+	padding: 0.5em;
+	margin: 0 2.5%;
+}
 
-// .participation{
-// 	width: 45%;
-// 	background-color: blue;
-// 	box-sizing: border-box;
-// 	padding: 0.5em;
-// 	margin: 0 2.5%;
-// 	float: left;
-// }
+.participation{
+	width: 45%;
+	background-color: blue;
+	box-sizing: border-box;
+	padding: 0.5em;
+	margin: 0 2.5%;
+	float: left;
+}
 
-// .benefits{
-// 	width: 45%;
-// 	background-color: blue;
-// 	box-sizing: border-box;
-// 	padding: 0.5em;
-// 	margin: 0 2.5%;
-// 	float: left;
-// }
+.benefits{
+	width: 45%;
+	background-color: blue;
+	box-sizing: border-box;
+	padding: 0.5em;
+	margin: 0 2.5%;
+	float: left;
+}
 
-// .requirements{
-// 	width: 45%;
-// 	background-color: blue;
-// 	box-sizing: border-box;
-// 	padding: 0.5em;
-// 	margin: 0 2.5%;
-// 	float: left;
-// }
+.requirements{
+	width: 45%;
+	background-color: blue;
+	box-sizing: border-box;
+	padding: 0.5em;
+	margin: 0 2.5%;
+	float: left;
+}
 
 
