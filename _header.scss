@@ -1,0 +1,64 @@
+
+
+.intro{
+	background-color: $light_accent;
+}
+
+
+header[role="banner"]{
+	width: 80%;
+	max-width: 1200px;
+	padding-left: 1em;
+	margin-top: -2em;
+	top: 30px;
+	background-color: $dark_accent;
+	transform: rotate(-10deg);
+	font-family: "tablet-gothic-compressed";
+	position: relative;
+	color: $secondary_color;
+
+	h1{
+		margin-top: 1em;
+		margin-bottom: 10px;
+	}
+
+	h2{
+		margin: 0 auto;
+		padding-bottom: 0.5em;
+	}
+}
+
+.summary{
+	float: right;
+	max-width: 900px;
+	box-sizing: border-box;
+	padding: 2em;
+	font-family: "industry";
+	font-weight: 700;
+	background-color: darken($dark_accent, 5%);
+	color: white;
+	position: relative;
+	transform: rotate(2deg);
+
+	p{
+		transform: rotate(-2deg);
+	}
+
+	a{
+		color: $secondary_color;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover{
+			text-decoration: line-through;
+		}
+	}
+}
+
+
+.preamble{
+	background-color: lightblue;
+	width: 100%;
+	max-width: 760px;
+	float: left;
+}
