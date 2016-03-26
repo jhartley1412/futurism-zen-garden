@@ -1,0 +1,68 @@
+
+
+.intro{
+	background-image: url('./_images/brown_swatches.svg');
+	background-size: cover;
+}
+
+
+header[role="banner"]{
+	width: 100%;
+	padding-left: 1em;
+	margin-top: -2em;
+	top: 30px;
+	background-color: $primary_color;
+	transform: rotate(-10deg);
+	font-family: "tablet-gothic-compressed";
+	position: relative;
+	color: $light_accent;
+
+	h1{
+		margin-top: 1em;
+		margin-bottom: 10px;
+	}
+
+	h2{
+		margin: 0 auto;
+		padding-bottom: 0.5em;
+	}
+}
+
+.summary{
+	float: right;
+	max-width: 900px;
+	box-sizing: border-box;
+	padding: 2em;
+	font-family: "industry";
+	font-weight: 700;
+	background-color: darken($primary_color, 10%);
+	color: $light_accent;
+	position: relative;
+	transform: rotate(2deg);
+
+	p{
+		transform: rotate(-2deg);
+	}
+}
+
+.preamble{
+	float: left;
+	max-width: 700px;
+	box-sizing: border-box;
+	padding: 2em;
+	font-family: "industry";
+	font-weight: 700;
+	background-color: $primary_color;
+	color: $light_accent;
+	position: relative;
+	transform: rotate(-1deg);
+
+	p{
+		transform: rotate(1deg);
+	}
+}
+
+
+
+
+
