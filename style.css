@@ -427,11 +427,15 @@ header[role="banner"] {
     z-index: 3;
     margin-top: -2em; }
 
+  .explanation:nth-child(even), .participation:nth-child(even), .benefits:nth-child(even), .requirements:nth-child(even) {
+    background-color: #f6f2ee; }
+  .explanation:nth-child(odd), .participation:nth-child(odd), .benefits:nth-child(odd), .requirements:nth-child(odd) {
+    background-color: #322826; }
+
   .explanation {
-    width: 100%;
-    background-color: green; }
+    width: 100%; }
     .explanation h3 {
-      font-size: 10em; } }
+      font-size: 2em; } }
 @media (min-width: 600px) {
   .intro {
     padding: 2em;
@@ -475,6 +479,11 @@ header[role="banner"] {
 body {
   background-color: #f6f2ee;
   width: 100%; }
+
+.main {
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: #5f747e; }
 
 h3 {
   font-family: "tablet-gothic-compressed";

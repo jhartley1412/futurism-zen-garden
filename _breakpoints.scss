@@ -25,13 +25,24 @@
 		margin-top: -2em;
 	}
 
+	.explanation, .participation, .benefits, .requirements{
+
+		&:nth-child(even){
+			background-color: $light_accent;
+		}
+
+		&:nth-child(odd){
+			background-color: $dark_accent;
+		}
+	}
+
 	.explanation{
 		width: 100%;
-		
+
 		h3{
-			font-size: 10em;
+			font-size: 2em;
 		}
-		background-color: green;
+
 	}
 }
 

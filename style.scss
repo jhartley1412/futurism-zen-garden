@@ -13,6 +13,12 @@ body{
 	width: 100%;
 }
 
+.main{
+	box-sizing: border-box;
+	padding: 1em;
+	background-color: $secondary_color;
+}
+
 h3{
 	font-family: "tablet-gothic-compressed";
 	margin: 0 auto;
