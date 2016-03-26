@@ -1,12 +1,14 @@
 
 
 .intro{
-	background-image: url('./_images/brown_swatches.svg');
+	background-image: url('../_images/brown_swatches.svg');
 	background-size: cover;
+	padding-bottom: 1em;
 }
 
 
 header[role="banner"]{
+	z-index: 3;
 	width: 100%;
 	padding-left: 1em;
 	margin-top: -2em;
@@ -29,6 +31,7 @@ header[role="banner"]{
 }
 
 .summary{
+	z-index: 2;
 	float: right;
 	max-width: 900px;
 	box-sizing: border-box;
@@ -46,6 +49,7 @@ header[role="banner"]{
 }
 
 .preamble{
+	z-index: 1;
 	float: left;
 	max-width: 700px;
 	box-sizing: border-box;

@@ -361,10 +361,12 @@ textarea {
   -webkit-appearance: none; }
 
 .intro {
-  background-image: url("./_images/brown_swatches.svg");
-  background-size: cover; }
+  background-image: url("../_images/brown_swatches.svg");
+  background-size: cover;
+  padding-bottom: 1em; }
 
 header[role="banner"] {
+  z-index: 3;
   width: 100%;
   padding-left: 1em;
   margin-top: -2em;
@@ -382,6 +384,7 @@ header[role="banner"] {
     padding-bottom: 0.5em; }
 
 .summary {
+  z-index: 2;
   float: right;
   max-width: 900px;
   box-sizing: border-box;
@@ -396,6 +399,7 @@ header[role="banner"] {
     transform: rotate(-2deg); }
 
 .preamble {
+  z-index: 1;
   float: left;
   max-width: 700px;
   box-sizing: border-box;
@@ -409,49 +413,47 @@ header[role="banner"] {
   .preamble p {
     transform: rotate(1deg); }
 
-@media (min-width: 400px) {
+@media (min-width: 0) {
   .intro {
-    padding: 0;
     overflow: hidden; }
 
   header[role="banner"] {
-    z-index: 2;
-    font-size: 1em; }
+    font-size: 1.4em; }
+    header[role="banner"] h2 {
+      font-size: 1em;
+      margin-top: -1em; }
 
   .summary {
-    z-index: 1;
+    margin-top: 2em; } }
+@media (min-width: 400px) {
+  .intro {
+    padding: 0;
+    padding-bottom: 1em;
+    overflow: hidden; }
+
+  header[role="banner"] {
+    font-size: 2em; }
+
+  .summary {
     margin-top: 3em;
     font-size: 1em; }
 
-  .preamble {
-    z-index: 2;
-    margin-top: -2em; }
-
-  .explanation, .participation, .benefits, .requirements {
-    background-color: #f6f2ee; }
-
-  .explanation {
-    width: 100%; }
-    .explanation h3 {
-      font-size: 2em; } }
+  .preamble h3 {
+    font-size: 2em; } }
 @media (min-width: 600px) {
   .intro {
     padding: 2em;
     box-sizing: border-box; }
 
   header[role="banner"] {
-    z-index: 1;
     font-size: 2.5em;
     width: 100%; }
 
   .summary {
-    z-index: 2;
-    margin: 5em auto;
+    margin: 3em auto 0 auto;
     font-size: 1.2em; }
 
   .preamble {
-    z-index: 3;
-    margin-top: -8em;
     font-size: 1.2em; } }
 @media (min-width: 900px) {
   .intro {
@@ -460,18 +462,15 @@ header[role="banner"] {
     box-sizing: border-box; }
 
   header[role="banner"] {
-    z-index: 1;
     width: 100%;
     font-size: 4em; }
 
   .summary {
-    z-index: 2;
-    margin: 3em auto;
+    margin: 3em auto 0 auto;
     font-size: 1.4em; }
 
   .preamble {
-    z-index: 3;
-    margin-top: -7em;
+    margin-top: -2em;
     font-size: 1.4em;
     position: relative; } }
 body {
