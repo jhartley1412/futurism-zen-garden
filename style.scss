@@ -10,6 +10,10 @@ $dark_accent: #322826; // dark brown
 $light_accent: #f6f2ee; // off-white
 
 body{
+	background-color: $dark_accent;
+}
+
+.intro{
 	background-color: $light_accent;
 }
 
@@ -31,25 +35,43 @@ header[role="banner"]{
 	}
 
 	h2{
-		margin-top: 0;
+		margin: 0 auto;
+		padding-bottom: 0.5em;
 	}
 }
 
 .summary{
-	width: 100%;
+	float: right;
 	max-width: 900px;
 	box-sizing: border-box;
 	padding: 2em;
 	font-family: "industry";
 	font-weight: 700;
-	font-size: 1.4em;
 	background-color: darken($dark_accent, 5%);
 	color: white;
+	position: relative;
+	transform: rotate(2deg);
+
+	p{
+		transform: rotate(-2deg);
+	}
 
 	a{
 		color: $secondary_color;
 		text-decoration: none;
 		text-transform: uppercase;
+
+		&:hover{
+			text-decoration: line-through;
+		}
 	}
+}
+
+
+.preamble{
+	background-color: lightblue;
+	width: 100%;
+	max-width: 760px;
+	float: left;
 }
 

@@ -362,31 +362,43 @@ textarea {
 
 @media (min-width: 400px) {
   header[role="banner"] {
+    z-index: 2;
     font-size: 1em; }
 
   .summary {
-    margin: 0 auto; } }
+    z-index: 1;
+    width: 100%;
+    margin-top: 3em;
+    font-size: 1em; } }
 @media (min-width: 600px) {
   header[role="banner"] {
+    z-index: 1;
     width: 50%;
     font-size: 2.5em; }
 
   .summary {
-    margin: 0 auto;
-    margin-top: 1em; } }
+    z-index: 2;
+    width: 40%;
+    margin: 0 5%;
+    font-size: 1.2em; } }
 @media (min-width: 900px) {
   .intro {
     width: 100%;
     position: relative; }
 
   header[role="banner"] {
+    z-index: 1;
     width: 100%;
     font-size: 4em; }
 
   .summary {
+    z-index: 2;
     margin: 0 auto;
-    margin-top: 2em; } }
+    font-size: 1.4em; } }
 body {
+  background-color: #322826; }
+
+.intro {
   background-color: #f6f2ee; }
 
 header[role="banner"] {
@@ -403,21 +415,33 @@ header[role="banner"] {
     margin-top: 1em;
     margin-bottom: 10px; }
   header[role="banner"] h2 {
-    margin-top: 0; }
+    margin: 0 auto;
+    padding-bottom: 0.5em; }
 
 .summary {
-  width: 100%;
+  float: right;
   max-width: 900px;
   box-sizing: border-box;
   padding: 2em;
   font-family: "industry";
   font-weight: 700;
-  font-size: 1.4em;
   background-color: #241c1b;
-  color: white; }
+  color: white;
+  position: relative;
+  transform: rotate(2deg); }
+  .summary p {
+    transform: rotate(-2deg); }
   .summary a {
     color: #5f747e;
     text-decoration: none;
     text-transform: uppercase; }
+    .summary a:hover {
+      text-decoration: line-through; }
+
+.preamble {
+  background-color: lightblue;
+  width: 100%;
+  max-width: 760px;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
