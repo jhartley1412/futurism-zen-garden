@@ -442,10 +442,10 @@ header[role="banner"] {
   padding-top: 1em; }
 
 .explanation, .participation, .benefits, .requirements {
-  width: 100%;
   box-sizing: border-box;
   padding: 2em;
   margin-top: 0.5em;
+  max-width: 600px;
   color: #322826;
   background-color: #f6f2ee; }
 
@@ -473,12 +473,7 @@ header[role="banner"] {
     margin-top: 2em; }
 
   .explanation, .participation, .benefits, .requirements {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2em;
-    margin-top: 0.5em;
-    color: #322826;
-    background-color: #f6f2ee; } }
+    width: 100%; } }
 @media (min-width: 400px) {
   .intro {
     padding: 0;
@@ -515,21 +510,11 @@ header[role="banner"] {
     font-size: 1.2em; }
 
   .explanation, .participation, .benefits, .requirements {
-    width: 95%;
-    float: none;
-    max-width: 600px;
-    box-sizing: border-box;
-    padding: 2em;
+    width: 70%;
     margin: 3em auto;
-    color: #322826; }
-
-  .explanation {
     position: relative;
-    z-index: 1;
-    transform: rotate(-1deg); }
-    .explanation p, .explanation h3 {
-      transform: rotate(1deg); }
-    .explanation:before, .explanation:after {
+    z-index: 1; }
+    .explanation:before, .explanation:after, .participation:before, .participation:after, .benefits:before, .benefits:after, .requirements:before, .requirements:after {
       background: inherit;
       content: '';
       display: block;
@@ -539,89 +524,31 @@ header[role="banner"] {
       right: 0;
       z-index: -1;
       -webkit-backface-visibility: hidden; }
-    .explanation:before {
+
+  .explanation, .benefits {
+    transform: rotate(-1deg); }
+    .explanation p, .explanation h3, .benefits p, .benefits h3 {
+      transform: rotate(1deg); }
+    .explanation:before, .benefits:before {
       top: 0;
       transform: skewY(-3deg);
       transform-origin: 100% 0; }
-    .explanation:after {
+    .explanation:after, .benefits:after {
       bottom: 0;
       transform: skewY(3deg);
       transform-origin: 100%; }
 
-  .participation {
-    position: relative;
-    z-index: 1;
+  .participation, .requirements {
     transform: rotate(1deg); }
-    .participation p, .participation h3 {
+    .participation p, .participation h3, .requirements p, .requirements h3 {
       transform: rotate(-1deg); }
-    .participation:before, .participation:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    .participation:before {
+    .participation:before, .requirements:before {
       top: 0;
       transform: skewY(2deg);
       transform-origin: 100% 0; }
-    .participation:after {
+    .participation:after, .requirements:after {
       bottom: 0;
       transform: skewY(-2deg);
-      transform-origin: 100%; }
-
-  .benefits {
-    position: relative;
-    z-index: 1;
-    transform: rotate(-1deg); }
-    .benefits p, .benefits h3 {
-      transform: rotate(1deg); }
-    .benefits:before, .benefits:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    .benefits:before {
-      top: 0;
-      transform: skewY(-3deg);
-      transform-origin: 100% 0; }
-    .benefits:after {
-      bottom: 0;
-      transform: skewY(-3deg);
-      transform-origin: 100%; }
-
-  .requirements {
-    position: relative;
-    z-index: 1;
-    transform: rotate(1deg);
-    margin-top: 4em; }
-    .requirements p, .requirements h3 {
-      transform: rotate(-1deg); }
-    .requirements:before, .requirements:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    .requirements:before {
-      top: 0;
-      transform: skewY(1deg);
-      transform-origin: 100% 0; }
-    .requirements:after {
-      bottom: 0;
-      transform: skewY(-1deg);
       transform-origin: 100%; } }
 @media (min-width: 900px) {
   h3 {
@@ -644,10 +571,7 @@ header[role="banner"] {
   .preamble {
     margin-top: -2em;
     font-size: 1.4em;
-    position: relative; }
-
-  .explanation, .participation, .benefits, .requirements {
-    float: left; } }
+    position: relative; } }
 body {
   background-color: #f6f2ee;
   width: 100%; }

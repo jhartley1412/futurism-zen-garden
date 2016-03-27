@@ -33,15 +33,13 @@
 
 	.explanation, .participation, .benefits, .requirements{
 		width: 100%;
-		box-sizing: border-box;
-		padding: 2em;
-		margin-top: 0.5em;
-		color: $dark_accent;
-		background-color: $light_accent;
 	}
 
 
 }
+
+
+
 
 
 @media(min-width: 400px){
@@ -62,6 +60,8 @@
 	}
 
 }
+
+
 
 
 
@@ -98,36 +98,31 @@
 
 
 	.explanation, .participation, .benefits, .requirements{
-		width: 95%;
-		float: none;
-		max-width: 600px;
-		box-sizing: border-box;
-		padding: 2em;
+		width: 70%;
 		margin: 3em auto;
-		color: $dark_accent;
+		position: relative;
+	  	z-index: 1;
+	  	
+	  	&:before,
+	  	&:after {
+		    background: inherit;
+		    content: '';
+		    display: block;
+		    height: 50%;
+		    left: 0;
+		    position: absolute;
+		    right: 0;
+		    z-index: -1;
+		    -webkit-backface-visibility: hidden; // for Chrome Windows
+		  }
 	}
 
-	.explanation{
-	  position: relative;
-	  z-index: 1;
+
+	.explanation, .benefits{
 	  transform: rotate(-1deg);
 
 	  p, h3{
 	  	transform: rotate(1deg);
-	  }
-
-	  
-	  &:before,
-	  &:after {
-	    background: inherit;
-	    content: '';
-	    display: block;
-	    height: 50%;
-	    left: 0;
-	    position: absolute;
-	    right: 0;
-	    z-index: -1;
-	    -webkit-backface-visibility: hidden; // for Chrome Windows
 	  }
 
 	  &:before {
@@ -145,26 +140,11 @@
 
 
 
-	.participation{
-	  position: relative;
-	  z-index: 1;
+	.participation, .requirements{
 	  transform: rotate(1deg);
 
 	  p, h3{
 	  	transform: rotate(-1deg);
-	  }
-	  
-	  &:before,
-	  &:after {
-	    background: inherit;
-	    content: '';
-	    display: block;
-	    height: 50%;
-	    left: 0;
-	    position: absolute;
-	    right: 0;
-	    z-index: -1;
-	    -webkit-backface-visibility: hidden; // for Chrome Windows
 	  }
 
 	  &:before {
@@ -176,78 +156,6 @@
 	  &:after {
 	    bottom: 0;
 	    transform: skewY(-2deg);
-	    transform-origin: 100%;
-	  }
-	}
-
-
-	.benefits{
-	  position: relative;
-	  z-index: 1;
-	  transform: rotate(-1deg);
-
-	  p, h3{
-	  	transform: rotate(1deg);
-	  }
-	  
-	  &:before,
-	  &:after {
-	    background: inherit;
-	    content: '';
-	    display: block;
-	    height: 50%;
-	    left: 0;
-	    position: absolute;
-	    right: 0;
-	    z-index: -1;
-	    -webkit-backface-visibility: hidden; // for Chrome Windows
-	  }
-
-	  &:before {
-	    top: 0;
-	    transform: skewY(-3deg);
-	    transform-origin: 100% 0;
-	  }
-	  
-	  &:after {
-	    bottom: 0;
-	    transform: skewY(-3deg);
-	    transform-origin: 100%;
-	  }
-	}
-
-	.requirements{
-	  position: relative;
-	  z-index: 1;
-	  transform: rotate(1deg);
-	  margin-top: 4em;
-
-	  p, h3{
-	  	transform: rotate(-1deg);
-	  }
-	  
-	  &:before,
-	  &:after {
-	    background: inherit;
-	    content: '';
-	    display: block;
-	    height: 50%;
-	    left: 0;
-	    position: absolute;
-	    right: 0;
-	    z-index: -1;
-	    -webkit-backface-visibility: hidden; // for Chrome Windows
-	  }
-
-	  &:before {
-	    top: 0;
-	    transform: skewY(1deg);
-	    transform-origin: 100% 0;
-	  }
-	  
-	  &:after {
-	    bottom: 0;
-	    transform: skewY(-1deg);
 	    transform-origin: 100%;
 	  }
 	}
@@ -287,11 +195,13 @@
 		position: relative;
 	}
 
-	.explanation, .participation, .benefits, .requirements{
-		float: left;
-	}
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
