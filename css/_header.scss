@@ -2,22 +2,34 @@
 
 @keyframes title{
 	from{
-		top: 0;
-		right: 0;
+		transform: translate(0, -6em);
 	}
 
 	to{
-		margin-right: 10em;
+		transform: translate(0, 0);
+		transform: rotate(-10deg);
 	}
 }
 
-@keyframes summary_animation{
-	from{
-		right: 0;
+@keyframes summaryAni{
+	0%{
+		transform: translate(5em, 0);
 	}
 
-	to{
-		left: -10em;
+	100%{
+		transform: translate(0, 0);
+		transform: rotate(2deg);
+	}
+}
+
+@keyframes preambleAni{
+	0%{
+		transform: translate(-5em, 0);
+	}
+
+	100%{
+		transform: translate(0, 0);
+		transform: rotate(-1deg);
 	}
 }
 
@@ -38,11 +50,11 @@ header[role="banner"]{
 	margin-top: -2em;
 	top: 30px;
 	background-color: $primary_color;
-	transform: rotate(-10deg);
 	font-family: "tablet-gothic-compressed";
 	position: relative;
 	color: $light_accent;
 	animation: title 3s;
+	transform: rotate(-10deg);
 
 	h1{
 		margin-top: 1em;
@@ -66,8 +78,8 @@ header[role="banner"]{
 	background-color: darken($primary_color, 10%);
 	color: $light_accent;
 	position: relative;
+	animation: summaryAni 3s;
 	transform: rotate(2deg);
-	animation: summary_animation 3s;
 
 	p{
 		transform: rotate(-2deg);
@@ -85,6 +97,7 @@ header[role="banner"]{
 	background-color: $primary_color;
 	color: $light_accent;
 	position: relative;
+	animation: preambleAni 3s;
 	transform: rotate(-1deg);
 
 	p{
