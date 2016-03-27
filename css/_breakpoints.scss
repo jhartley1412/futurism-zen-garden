@@ -35,6 +35,14 @@
 		width: 100%;
 	}
 
+	footer{
+		padding-top: 2em;
+		a{
+			font-size: 1.5em;
+			margin: 0 0.2em;
+		}
+	}
+
 
 }
 
@@ -158,6 +166,16 @@
 	    transform: skewY(-2deg);
 	    transform-origin: 100%;
 	  }
+	}
+
+
+
+	footer{
+		padding-top: 2.5em;
+		a{
+			font-size: 1.8em;
+			margin: 0 0.4em;
+		}
 	}
 
 }

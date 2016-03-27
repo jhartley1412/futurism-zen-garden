@@ -37,12 +37,19 @@ a{
 }
 
 footer{
-	width: 100%;
 	text-align: center;
+	box-sizing: border-box;
 
 	a{
-		margin-right: 1em;
-		font-size: 1.5em;
+		font-family: 'industry';
+		padding: 0.5em;
+
+		&:hover{
+			color: $light_accent;
+
+			background-image: url('../_images/button_bg.svg');
+			background-size: contain;
+		}
 	}
 }
 

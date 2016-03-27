@@ -473,7 +473,13 @@ header[role="banner"] {
     margin-top: 2em; }
 
   .explanation, .participation, .benefits, .requirements {
-    width: 100%; } }
+    width: 100%; }
+
+  footer {
+    padding-top: 2em; }
+    footer a {
+      font-size: 1.5em;
+      margin: 0 0.2em; } }
 @media (min-width: 400px) {
   .intro {
     padding: 0;
@@ -549,7 +555,13 @@ header[role="banner"] {
     .participation:after, .requirements:after {
       bottom: 0;
       transform: skewY(-2deg);
-      transform-origin: 100%; } }
+      transform-origin: 100%; }
+
+  footer {
+    padding-top: 2.5em; }
+    footer a {
+      font-size: 1.8em;
+      margin: 0 0.4em; } }
 @media (min-width: 900px) {
   h3 {
     font-size: 2.2em; }
@@ -592,11 +604,15 @@ a {
     text-decoration: line-through; }
 
 footer {
-  width: 100%;
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
   footer a {
-    margin-right: 1em;
-    font-size: 1.5em; }
+    font-family: 'industry';
+    padding: 0.5em; }
+    footer a:hover {
+      color: #f6f2ee;
+      background-image: url("../_images/button_bg.svg");
+      background-size: contain; }
 
 .sidebar {
   width: 100%;
