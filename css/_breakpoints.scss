@@ -97,12 +97,12 @@
 
 	.explanation, .participation, .benefits, .requirements{
 		width: 40%;
+		float: none;
 		max-width: 600px;
 		box-sizing: border-box;
 		padding: 2em;
 		margin: 0.5em auto;
 		color: $dark_accent;
-		background-color: $light_accent;
 	}
 }
 
@@ -139,7 +139,9 @@
 		position: relative;
 	}
 
-
+	.explanation, .participation, .benefits, .requirements{
+		float: left;
+	}
 
 
 
