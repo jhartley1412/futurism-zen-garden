@@ -591,4 +591,27 @@ a {
   a:hover {
     text-decoration: line-through; }
 
+footer {
+  width: 100%;
+  text-align: center; }
+  footer a {
+    margin-right: 1em;
+    font-size: 1.5em; }
+
+.sidebar {
+  width: 100%;
+  overflow: hidden; }
+  .sidebar .wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 1em auto; }
+
+li {
+  float: left; }
+
+.design-selection, .design-archives, .zen-resources {
+  text-align: center;
+  overflow: hidden;
+  margin: 2em auto; }
+
 /*# sourceMappingURL=style.css.map */
