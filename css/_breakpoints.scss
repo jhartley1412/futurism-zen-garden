@@ -6,6 +6,7 @@
 
 	p{
 		font-weight: 400;
+		line-height: 1.8;
 	}
 
 	h3{
@@ -72,6 +73,7 @@
 
 	p{
 		font-weight: 700;
+		line-height: 2;
 	}
 
 
@@ -96,19 +98,24 @@
 
 
 	.explanation, .participation, .benefits, .requirements{
-		width: 40%;
+		width: 95%;
 		float: none;
 		max-width: 600px;
 		box-sizing: border-box;
 		padding: 2em;
-		margin: 0.5em auto;
+		margin: 3em auto;
 		color: $dark_accent;
 	}
 
 	.explanation{
 	  position: relative;
 	  z-index: 1;
-	  transform: rotate
+	  transform: rotate(-1deg);
+
+	  p, h3{
+	  	transform: rotate(1deg);
+	  }
+
 	  
 	  &:before,
 	  &:after {
@@ -125,13 +132,122 @@
 
 	  &:before {
 	    top: 0;
+	    transform: skewY(-3deg);
+	    transform-origin: 100% 0;
+	  }
+	  
+	  &:after {
+	    bottom: 0;
 	    transform: skewY(3deg);
+	    transform-origin: 100%;
+	  }
+	}
+
+
+
+	.participation{
+	  position: relative;
+	  z-index: 1;
+	  transform: rotate(1deg);
+
+	  p, h3{
+	  	transform: rotate(-1deg);
+	  }
+	  
+	  &:before,
+	  &:after {
+	    background: inherit;
+	    content: '';
+	    display: block;
+	    height: 50%;
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    z-index: -1;
+	    -webkit-backface-visibility: hidden; // for Chrome Windows
+	  }
+
+	  &:before {
+	    top: 0;
+	    transform: skewY(2deg);
+	    transform-origin: 100% 0;
+	  }
+	  
+	  &:after {
+	    bottom: 0;
+	    transform: skewY(-2deg);
+	    transform-origin: 100%;
+	  }
+	}
+
+
+	.benefits{
+	  position: relative;
+	  z-index: 1;
+	  transform: rotate(-1deg);
+
+	  p, h3{
+	  	transform: rotate(1deg);
+	  }
+	  
+	  &:before,
+	  &:after {
+	    background: inherit;
+	    content: '';
+	    display: block;
+	    height: 50%;
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    z-index: -1;
+	    -webkit-backface-visibility: hidden; // for Chrome Windows
+	  }
+
+	  &:before {
+	    top: 0;
+	    transform: skewY(-3deg);
 	    transform-origin: 100% 0;
 	  }
 	  
 	  &:after {
 	    bottom: 0;
 	    transform: skewY(-3deg);
+	    transform-origin: 100%;
+	  }
+	}
+
+	.requirements{
+	  position: relative;
+	  z-index: 1;
+	  transform: rotate(1deg);
+	  margin-top: 4em;
+
+	  p, h3{
+	  	transform: rotate(-1deg);
+	  }
+	  
+	  &:before,
+	  &:after {
+	    background: inherit;
+	    content: '';
+	    display: block;
+	    height: 50%;
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    z-index: -1;
+	    -webkit-backface-visibility: hidden; // for Chrome Windows
+	  }
+
+	  &:before {
+	    top: 0;
+	    transform: skewY(1deg);
+	    transform-origin: 100% 0;
+	  }
+	  
+	  &:after {
+	    bottom: 0;
+	    transform: skewY(-1deg);
 	    transform-origin: 100%;
 	  }
 	}
