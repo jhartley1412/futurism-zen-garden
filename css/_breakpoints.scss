@@ -39,7 +39,7 @@
 		padding-top: 2em;
 		a{
 			font-size: 1.5em;
-			margin: 0 0.2em;
+			margin: 0 0.1em;
 		}
 	}
 
@@ -211,6 +211,28 @@
 		margin-top: -2em;
 		font-size: 1.4em;
 		position: relative;
+	}
+
+
+	.explanation, .participation, .benefits, .requirements{
+		width: 45%;
+		margin: 3em 2.5%;
+		position: relative;
+	  	z-index: 1;
+	  	float: left;
+	  	
+	  	&:before,
+	  	&:after {
+		    background: inherit;
+		    content: '';
+		    display: block;
+		    height: 50%;
+		    left: 0;
+		    position: absolute;
+		    right: 0;
+		    z-index: -1;
+		    -webkit-backface-visibility: hidden; // for Chrome Windows
+		  }
 	}
 
 }

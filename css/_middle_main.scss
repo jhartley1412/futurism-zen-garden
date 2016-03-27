@@ -1,7 +1,7 @@
 
 .main{
 	box-sizing: border-box;
-	background-color: $dark_accent;
+	background-color: $primary_color;
 	padding-top: 1em;
 }
 
@@ -10,8 +10,8 @@
 	padding: 2em;
 	margin-top: 0.5em;
 	max-width: 600px;
-	color: $dark_accent;
-	background-color: $light_accent;
+	color: $light_accent;
+	background-color: $dark_accent;
 }
 
 .sidebar{
