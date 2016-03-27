@@ -5,6 +5,8 @@
 
 @import 'header';
 
+@import 'middle_main';
+
 @import 'breakpoints';
 
 
@@ -13,11 +15,6 @@ body{
 	width: 100%;
 }
 
-.main{
-	box-sizing: border-box;
-	background-color: $dark_accent;
-	padding-top: 1em;
-}
 
 h3{
 	font-family: "tablet-gothic-compressed";
@@ -40,18 +37,6 @@ a{
 	}
 }
 
-.explanation, .participation, .benefits, .requirements{
-	width: 100%;
-	box-sizing: border-box;
-	padding: 2em;
-	margin-top: 0.5em;
-	color: $dark_accent;
-	background-color: $light_accent;
-}
-
-.sidebar{
-	background-color: $dark_accent;
-}
 
 
 

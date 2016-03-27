@@ -104,6 +104,38 @@
 		margin: 0.5em auto;
 		color: $dark_accent;
 	}
+
+	.explanation{
+	  position: relative;
+	  z-index: 1;
+	  transform: rotate
+	  
+	  &:before,
+	  &:after {
+	    background: inherit;
+	    content: '';
+	    display: block;
+	    height: 50%;
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    z-index: -1;
+	    -webkit-backface-visibility: hidden; // for Chrome Windows
+	  }
+
+	  &:before {
+	    top: 0;
+	    transform: skewY(3deg);
+	    transform-origin: 100% 0;
+	  }
+	  
+	  &:after {
+	    bottom: 0;
+	    transform: skewY(-3deg);
+	    transform-origin: 100%;
+	  }
+	}
+
 }
 
 

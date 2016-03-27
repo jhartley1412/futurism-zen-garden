@@ -1,0 +1,19 @@
+
+.main{
+	box-sizing: border-box;
+	background-color: $dark_accent;
+	padding-top: 1em;
+}
+
+.explanation, .participation, .benefits, .requirements{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 2em;
+	margin-top: 0.5em;
+	color: $dark_accent;
+	background-color: $light_accent;
+}
+
+.sidebar{
+	background-color: $dark_accent;
+}
