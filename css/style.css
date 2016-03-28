@@ -379,10 +379,6 @@ textarea {
     transform: translate(0, 0);
     transform: rotate(-1deg); } }
 .intro {
-  background-image: url("../_images/brown_swatches.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-bottom: 1em; }
 
 header[role="banner"] {
@@ -438,7 +434,7 @@ header[role="banner"] {
 
 .main {
   box-sizing: border-box;
-  background-color: #50323e;
+  background-color: rgba(80, 50, 62, 0.8);
   padding-top: 1em; }
 
 .explanation, .participation, .benefits, .requirements {
@@ -446,8 +442,8 @@ header[role="banner"] {
   padding: 2em;
   margin-top: 0.5em;
   max-width: 600px;
-  color: #f6f2ee;
-  background-color: #322826; }
+  color: #50323e;
+  background-color: #f6f2ee; }
 
 .sidebar {
   background-color: #322826; }
@@ -586,11 +582,10 @@ header[role="banner"] {
     position: relative; }
 
   .explanation, .participation, .benefits, .requirements {
-    width: 45%;
-    margin: 3em 2.5%;
+    width: 75%;
+    margin: 3em auto;
     position: relative;
-    z-index: 1;
-    float: left; }
+    z-index: 1; }
     .explanation:before, .explanation:after, .participation:before, .participation:after, .benefits:before, .benefits:after, .requirements:before, .requirements:after {
       background: inherit;
       content: '';
@@ -600,10 +595,19 @@ header[role="banner"] {
       position: absolute;
       right: 0;
       z-index: -1;
-      -webkit-backface-visibility: hidden; } }
+      -webkit-backface-visibility: hidden; }
+    .explanation:nth-child(odd), .participation:nth-child(odd), .benefits:nth-child(odd), .requirements:nth-child(odd) {
+      float: left; }
+    .explanation:nth-child(even), .participation:nth-child(even), .benefits:nth-child(even), .requirements:nth-child(even) {
+      float: right; } }
 body {
   background-color: #f6f2ee;
-  width: 100%; }
+  width: 100%;
+  background-image: url("../_images/brown_swatches.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 h3 {
   font-family: "tablet-gothic-compressed";
@@ -623,7 +627,9 @@ a {
 footer {
   text-align: center;
   box-sizing: border-box;
-  padding-bottom: 2em; }
+  margin-top: 2em;
+  padding-bottom: 4em;
+  clear: both; }
   footer a {
     font-family: 'industry';
     padding: 0.5em; }

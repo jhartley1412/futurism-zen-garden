@@ -13,6 +13,12 @@
 body{
 	background-color: $light_accent;
 	width: 100%;
+
+	background-image: url('../_images/brown_swatches.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 
@@ -39,7 +45,9 @@ a{
 footer{
 	text-align: center;
 	box-sizing: border-box;
-	padding-bottom: 2em;
+	margin-top: 2em;
+	padding-bottom: 4em;
+	clear: both;
 
 	a{
 		font-family: 'industry';

@@ -215,11 +215,10 @@
 
 
 	.explanation, .participation, .benefits, .requirements{
-		width: 45%;
-		margin: 3em 2.5%;
+		width: 75%;
+		margin: 3em auto;
 		position: relative;
 	  	z-index: 1;
-	  	float: left;
 	  	
 	  	&:before,
 	  	&:after {
@@ -232,7 +231,15 @@
 		    right: 0;
 		    z-index: -1;
 		    -webkit-backface-visibility: hidden; // for Chrome Windows
-		  }
+	  }
+
+	  &:nth-child(odd){
+	  	float: left;
+	  }
+
+	  &:nth-child(even){
+	  	float: right;
+	  }
 	}
 
 }

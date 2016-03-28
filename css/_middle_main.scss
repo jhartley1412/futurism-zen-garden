@@ -1,7 +1,8 @@
 
 .main{
 	box-sizing: border-box;
-	background-color: $primary_color;
+	background-color: rgba(80,50,62,0.8);
+
 	padding-top: 1em;
 }
 
@@ -10,8 +11,8 @@
 	padding: 2em;
 	margin-top: 0.5em;
 	max-width: 600px;
-	color: $light_accent;
-	background-color: $dark_accent;
+	color: $primary_color;
+	background-color: $light_accent;
 }
 
 .sidebar{
