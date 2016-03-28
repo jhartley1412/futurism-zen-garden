@@ -212,34 +212,14 @@
 		font-size: 1.4em;
 		position: relative;
 	}
-
-
+	
 	.explanation, .participation, .benefits, .requirements{
-		width: 75%;
-		margin: 3em auto;
-		position: relative;
-	  	z-index: 1;
-	  	
-	  	&:before,
-	  	&:after {
-		    background: inherit;
-		    content: '';
-		    display: block;
-		    height: 50%;
-		    left: 0;
-		    position: absolute;
-		    right: 0;
-		    z-index: -1;
-		    -webkit-backface-visibility: hidden; // for Chrome Windows
-	  }
+		float: left;
+		margin: 0.5em 2.5%;
+	}
 
-	  &:nth-child(odd){
-	  	float: left;
-	  }
-
-	  &:nth-child(even){
-	  	float: right;
-	  }
+	.participation, .requirements{
+		margin-top: 5em;
 	}
 
 }

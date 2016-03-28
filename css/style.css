@@ -582,24 +582,11 @@ header[role="banner"] {
     position: relative; }
 
   .explanation, .participation, .benefits, .requirements {
-    width: 75%;
-    margin: 3em auto;
-    position: relative;
-    z-index: 1; }
-    .explanation:before, .explanation:after, .participation:before, .participation:after, .benefits:before, .benefits:after, .requirements:before, .requirements:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; }
-    .explanation:nth-child(odd), .participation:nth-child(odd), .benefits:nth-child(odd), .requirements:nth-child(odd) {
-      float: left; }
-    .explanation:nth-child(even), .participation:nth-child(even), .benefits:nth-child(even), .requirements:nth-child(even) {
-      float: right; } }
+    float: left;
+    margin: 0.5em 2.5%; }
+
+  .participation, .requirements {
+    margin-top: 5em; } }
 body {
   background-color: #f6f2ee;
   width: 100%;
