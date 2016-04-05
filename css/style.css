@@ -435,15 +435,20 @@ header[role="banner"] {
 .main {
   box-sizing: border-box;
   background-color: rgba(80, 50, 62, 0.8);
-  padding-top: 1em; }
+  padding-top: 1em;
+  overflow: hidden; }
 
 .explanation, .participation, .benefits, .requirements {
   box-sizing: border-box;
   padding: 2em;
   margin-top: 0.5em;
-  max-width: 600px;
-  color: #50323e;
+  color: #50323e; }
+
+.explanation, .benefits {
   background-color: #f6f2ee; }
+
+.participation, .requirements {
+  background-color: #e4d9cd; }
 
 .sidebar {
   background-color: #322826; }
@@ -512,10 +517,8 @@ header[role="banner"] {
     font-size: 1.2em; }
 
   .explanation, .participation, .benefits, .requirements {
-    width: 70%;
-    margin: 3em auto;
-    position: relative;
-    z-index: 1; }
+    width: 100%;
+    position: relative; }
     .explanation:before, .explanation:after, .participation:before, .participation:after, .benefits:before, .benefits:after, .requirements:before, .requirements:after {
       background: inherit;
       content: '';
@@ -528,6 +531,7 @@ header[role="banner"] {
       -webkit-backface-visibility: hidden; }
 
   .explanation, .benefits {
+    z-index: 2;
     transform: rotate(-1deg); }
     .explanation p, .explanation h3, .benefits p, .benefits h3 {
       transform: rotate(1deg); }
@@ -541,6 +545,7 @@ header[role="banner"] {
       transform-origin: 100%; }
 
   .participation, .requirements {
+    z-index: 1;
     transform: rotate(1deg); }
     .participation p, .participation h3, .requirements p, .requirements h3 {
       transform: rotate(-1deg); }

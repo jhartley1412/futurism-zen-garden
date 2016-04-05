@@ -3,16 +3,25 @@
 	box-sizing: border-box;
 	background-color: rgba(80,50,62,0.8);
 	padding-top: 1em;
+	overflow: hidden;
 }
 
 .explanation, .participation, .benefits, .requirements{
 	box-sizing: border-box;
 	padding: 2em;
 	margin-top: 0.5em;
-	max-width: 600px;
+	// max-width: 600px;
 	color: $primary_color;
+}
+
+.explanation, .benefits{
 	background-color: $light_accent;
 }
+
+.participation, .requirements{
+	background-color: darken($light_accent, 10%);
+}
+
 
 .sidebar{
 	background-color: $dark_accent;

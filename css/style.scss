@@ -1,13 +1,15 @@
 
-@import 'variables';
+@import 'variables',
+		'normalize',
+		'header',
+		'middle_main',
+		'breakpoints';
 
-@import 'normalize';
+// python -m SimpleHTTPServer 8000
 
-@import 'header';
+// localhost: 8000
 
-@import 'middle_main';
-
-@import 'breakpoints';
+// sass --watch ./
 
 
 body{
