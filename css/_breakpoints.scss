@@ -225,6 +225,26 @@
 }
 
 
+// more specifically for zooming in/out w/ command +/-
+
+@media (min-width: 1700px){
+
+	header[role="banner"]{
+		margin-bottom: 5em;
+	}
+
+}
+
+
+@media (min-width: 2500px){
+
+	header[role="banner"]{
+		margin-bottom: 7em;
+	}
+
+}
+
+
 
 
 

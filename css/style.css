@@ -386,6 +386,7 @@ header[role="banner"] {
   width: 100%;
   padding-left: 1em;
   margin-top: -2em;
+  margin-bottom: 5%;
   top: 30px;
   background-color: #50323e;
   font-family: "tablet-gothic-compressed";
@@ -592,6 +593,12 @@ header[role="banner"] {
 
   .participation, .requirements {
     margin-top: 5em; } }
+@media (min-width: 1700px) {
+  header[role="banner"] {
+    margin-bottom: 5em; } }
+@media (min-width: 2500px) {
+  header[role="banner"] {
+    margin-bottom: 7em; } }
 body {
   background-color: #f6f2ee;
   width: 100%;
