@@ -1,0 +1,112 @@
+
+@import 'variables',
+		'normalize',
+		'header',
+		'middle_main',
+		'breakpoints';
+
+// python -m SimpleHTTPServer 8000
+
+// localhost: 8000
+
+// sass --watch ./
+
+
+body{
+	background-color: $light_accent;
+	width: 100%;
+
+	background-image: url('../_images/brown_swatches.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+h3{
+	font-family: "tablet-gothic-compressed";
+	margin: 0 auto;
+}
+
+p{
+	font-family: "industry";
+}
+
+a{
+	color: $secondary_color;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	&:hover{
+		text-decoration: line-through;
+	}
+}
+
+footer{
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 2em;
+	padding-bottom: 4em;
+	clear: both;
+
+	a{
+		font-family: 'industry';
+		padding: 0.5em;
+
+		&:hover{
+			color: $light_accent;
+
+			background-image: url('../_images/button_bg.svg');
+			background-size: cover;
+		}
+	}
+}
+
+
+.sidebar{
+	width: 100%;
+	overflow: hidden;
+	background-color: $light_accent;
+
+	.wrapper{
+		width: 90%;
+		max-width: 900px;
+		margin: 1em auto;
+	}
+
+	li{
+		display: block;
+		margin-bottom: 1em;
+	}
+}
+
+ul{
+	padding: 0;
+}
+
+.design-archives, .zen-resources{
+	ul{
+		list-style-type: none;
+	}
+
+	li{
+		display: inline-block;
+		margin: 0.5em;
+	}
+}
+
+.design-selection, .design-archives, .zen-resources{
+	text-align: center;
+	overflow: hidden;
+	margin: 2em auto;
+}
+
+
+
+
+
+
+
+
